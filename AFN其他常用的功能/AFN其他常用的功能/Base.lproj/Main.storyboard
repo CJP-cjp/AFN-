@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxs-Mm-Qct">
+                                <rect key="frame" x="150" y="285" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Bgu-Z7-GIE"/>
+                                </constraints>
+                                <state key="normal" title="HTTPS"/>
+                                <connections>
+                                    <action selector="HTTPS:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tN1-Nz-Lk3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRM-9H-iLG">
+                                <rect key="frame" x="150" y="175" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="d0a-tX-35S"/>
+                                    <constraint firstAttribute="width" constant="100" id="kHK-Db-D8X"/>
+                                </constraints>
+                                <state key="normal" title="baseURL"/>
+                                <connections>
+                                    <action selector="baseURL:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zbh-lk-1Eo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hxs-Mm-Qct" firstAttribute="width" secondItem="PRM-9H-iLG" secondAttribute="width" id="0Jd-Ar-u1z"/>
+                            <constraint firstItem="PRM-9H-iLG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="150" id="6xv-cl-UKL"/>
+                            <constraint firstItem="hxs-Mm-Qct" firstAttribute="height" secondItem="PRM-9H-iLG" secondAttribute="height" id="Cc6-eQ-6I7"/>
+                            <constraint firstItem="hxs-Mm-Qct" firstAttribute="top" secondItem="PRM-9H-iLG" secondAttribute="bottom" constant="80" id="JNk-ab-XyZ"/>
+                            <constraint firstItem="PRM-9H-iLG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="155" id="M6t-kj-KRg"/>
+                            <constraint firstItem="hxs-Mm-Qct" firstAttribute="leading" secondItem="PRM-9H-iLG" secondAttribute="leading" id="TyD-ay-yRh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="242" y="297"/>
+        </scene>
+    </scenes>
+</document>
